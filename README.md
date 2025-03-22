@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# AI Voice Changer
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A powerful AI-powered voice conversion application that can replicate celebrity voices with natural tone, emotional depth, and clear articulation.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 🎙️ Voice Timbre: Maintain distinct vocal characteristics unique to each celebrity
+- 😊 Emotional Range: Adapt to different emotions (excitement, anger, sadness, humor)
+- 🎯 Pace and Rhythm: Mimic natural speech patterns, pauses, and emphasis
+- 🎚️ Background Noise Reduction: Clear output even with minor input noise
+- 🎛️ Adaptive Voice Control: Pitch adjustments, gender conversion, and age variation
+- 🌍 Language Support: Multilingual capabilities
+- ⚡ Real-Time Processing: Minimal latency for seamless voice conversion
 
-   ```bash
-   npm install
-   ```
+## Supported Celebrity Voices
 
-2. Start the app
+- Morgan Freeman (deep, iconic narration)
+- Dwayne "The Rock" Johnson (strong, powerful voice)
+- Scarlett Johansson (smooth and engaging tone)
+- Kevin Hart (energetic and funny)
+- Ariana Grande (light, melodic voice)
+- Chris Hemsworth (powerful yet calm voice)
+- Tom Hanks (warm and friendly)
 
-   ```bash
-    npx expo start
-   ```
+## Technical Stack
 
-In the output, you'll find options to open the app in a
+- React Native / Expo
+- TensorFlow.js for AI model inference
+- WebRTC for real-time audio processing
+- FFmpeg for audio format conversion
+- Web Audio API for audio manipulation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Setup Instructions
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Install dependencies:
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Start the development server:
+```bash
+npx expo start
+```
 
-## Learn more
+3. Run on your device:
+- iOS: Scan QR code with Camera app
+- Android: Scan QR code with Expo Go app
 
-To learn more about developing your project with Expo, look at the following resources:
+## Project Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+ai-voice-changer/
+├── app/                    # Main application code
+│   ├── components/        # Reusable UI components
+│   ├── screens/          # Screen components
+│   ├── services/         # Business logic and API calls
+│   └── utils/            # Helper functions
+├── assets/               # Static assets
+├── models/              # AI model files
+└── config/              # Configuration files
+```
 
-## Join the community
+## Contributing
 
-Join our community of developers creating universal apps.
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- TensorFlow.js team for the voice conversion models
+- Expo team for the excellent mobile development framework
+- All celebrity voice samples used for training
